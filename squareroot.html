@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="inp1">
+     <input type="text" id="inp2">
+    <input type="text" id="inp3"> 
+    <button onclick="calculation()">click</button>
+    <h1 id="h1"></h1>
+    <h3 id="h2"></h3>
+    <h3 id="h3"></h3>
+    <script>
+        function calculation() {
+            let b=document.getElementById("inp1").value
+            let c=Math.sqrt(b)
+            document.getElementById("h1").innerHTML=`the squareroot of given number ${b} is : ${c}`
+            let m=document.getElementById("inp1").value
+            let n=Math.cbrt(m)
+            document.getElementById("h2").innerHTML=`the cuberoot of given value ${m} is ${n}`
+            let o=document.getElementById("inp1").value
+            let p=Math.log(o)
+            document.getElementById("h3").innerHTML=`the log value of given value ${o} is ${p}`
+            let x=document.getElementById("inp1").value
+            let y=Math.hypot(x)
+            document.getElementById("h1").innerHTML=`the ${x} is :${y}`
+        }
+        console.log(Math.hypot(5,2))
+            console.log(Math.pow(5,2))
+            console.log(Math.min(10,3,4,5,8))
+            let g=Math.random()
+            console.log(g)
+            console.log(Math.log2(6))
+    </script>
+</body>
+</html>

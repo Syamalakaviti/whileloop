@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <label for="name">Enter name</label>
+        <input type="text" id="name">
+        <label for="phone"> enter phone number</label>
+        <input type="text" id="phone">
+        <label for="mail">Enter mail</label>
+        <input type="text" id="mail">
+        <p id="p1"></p>
+        <p id="p2"></p>
+        <h1 id="h1"></h1>
+        <h2 id="h2"></h2>
+        <h3 id="h3"></h3>
+        <i id="i1"></i>
+        <i id="i2"></i>
+        <button onclick="details()">click</button>
+    </body>
+    <script>
+        function details(){
+            
+            let name1=document.getElementById("name").value;
+            if (name1==''){
+                document.getElementById("p2").innerHTML=`don't leave empty`
+            }
+            else{
+                if (name1.length> 3&& name1.length<15){
+                    localStorage.setItem("NAME",name1)
+            let a =localStorage.getItem("NAME")
+            document.getElementById("p1").innerHTML=`user name is ${a}`
+            document.getElementById("p1").style.color=`blue`
+                }
+                else{
+                    document.getElementById("p2").innerHTML=`invalid`
+                }
+                let phone1=document.getElementById("phone").value
+                if(phone1==""){
+                    document.getElementById("h1").innerHTML=`please enter phone number`
+                }
+                else{
+                    if(phone1.length==10){
+                        localStorage.setItem("PHONE",phone1)
+                        let p=localStorage.getItem("PHONE")
+                        document.getElementById("h3").innerHTML=`phone number is ${p}`
+                        document.getElementById("h1").style.color=`green`
+                    }
+                    else{
+                        document.getElementById("h2").innerHTML=`invalid`;
+                    }
+                }
+            }
+            let mail1=document.getElementById("mail").value
+            if(mail1==""){
+                document.getElementById("i1").innerHTML=`please enter mail id`
+            }
+            else{
+                if ()
+            }
+           
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+        }
+        div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    
+
+    </style>
+</head>
+<body>
+    <a href=""></a>
+    
+</body>
+<script>
+    //  let an=document.links
+    //  console.log(an)
+    //  let h=document.head
+    //  console.log(h)
+    //  let body=document.body
+    //  body.innerHTML=
+    let div=document.createElement("div")//header
+    console.log(div)
+    let body=document.body
+    body.appendChild(div)
+    div.innerHTML=`hello`
+    div.style.backgroundColor=`red`
+    div.style.height=`100px`
+    let div1=document.createElement("div")//naave
+    console.log(div1)
+    let body2=document.body
+    body2.appendChild(div1)
+    div1.innerHTML=`helloworld`
+    div1.style.backgroundColor=`green`
+    div1.style.height=`500px`
+    let div2=document.createElement("div")//footer
+    console.log(div2)
+    let body3=document.body
+    body3.appendChild(div2)
+    div2.innerHTML=`hii there`
+    div2.style.backgroundColor=`blue`
+    div2.style.height=`100px`
+
+    let a=document.createElementNS("div","h5")
+    console.log(a)
+</script>
+</html>

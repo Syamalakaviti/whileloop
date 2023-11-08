@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: aqua;
+            animation: clock 20s infinite;
+        }
+        h1{
+            text-align: center;
+            font-style: italic;
+            color:red;
+            text-shadow: 1px 1px 1px blue,-1px 1px 1px blue ,1px 1px 1px blue ,-1px -1px 1px blue ;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 150px;
+            
+            flex-direction:column;
+           
+        }
+        @keyframes identifier {
+            from
+            {
+                filter: hue-rotate(0deg);
+            }
+            to
+            {
+                filter: hue-rotate(2000deg);
+            }
+            
+        }
+        #hour{
+            font-size: 50px;
+            font-style: italic;
+        }
+        #date{
+            font-size: 20px;
+
+        }
+        .b{
+            font-style: italic;
+            color: brown;
+            text-shadow: 1px 1px 1px blue,-1px 1px 1px blue ,1px 1px 1px blue ,-1px -1px 1px blue ;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>DIGITAL CLOCK</h1>
+    <div class="container">
+<span id="hour" class="b"></span>
+<br>
+<span id="date" class="b"></span>
+    </div>
+</body>
+<script>
+    function display()
+    {
+    
+        let date=new Date();
+        let h=date.getHours()
+        let m=date.getMinutes()
+        let s=date.getSeconds()
+        let day=date.getDay()
+        let date1=date.getDate()
+        let month=date.getMonth()
+        let year=date.getFullYear()
+        let day1=["sunday","monday","tuesday","wednesday","thursday","friday","saturday"]
+        let mon1=["jan","feb","march","april","may","june","july","aug","sep","oct","nov","dec"]
+        let h1=(h>12)?(h-12):h;
+        let h2=(h1<0)?("0"+h1):h1
+        let m1=(m<10)?("0"+m):m;
+        let s1=(s<10)?("0"+s):s
+        document.getElementById("hour").innerHTML=`${h1}:${m1}:${s}`
+        document.getElementById("date").innerHTML=`${day1[day]} ${date1} ${mon1[month]}`
+        setInterval(() =>{
+            display();
+        },1000)
+    }
+    display()
+</script>
+</html>

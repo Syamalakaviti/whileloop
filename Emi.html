@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            background-color: aqua;
+            width: 100%;
+            height: 400px;
+        }
+        .a1{
+            background-color: bisque;
+            width: 400px;
+            height: 350px;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="a1">
+            <table>
+                <tr>
+                    <td>Amount you need <input type="text" size="9" placeholder="&#8377;" id="amount"></td>
+                </tr>
+                <tr>
+                    <td> <input type="range" class="range" id="amountrange" min="50000" max="4000000" onchange="amountrange()"></td>
+                </tr>
+                <tr>
+                    <td>&#8377;50,000&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&#8377;40,00,000</td>
+                </tr>
+            </table>
+        </div>
+            <div class="a1">
+                <table>
+                    <tr>
+                        <td>for<input type="text" size="9"  id="year"></td>
+                    </tr>
+                    <tr>
+                        <td> <input type="range" class="range" id="yearrange" min="1" max="5" step="0.1" onchange="yearrange()"></td>
+                    </tr>
+                    <tr>
+                        <td>1year&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&#8377;5years</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="a1">
+                <table>
+                    <tr>
+                        <td>for<input type="text" size="9"  id="year"></td>
+                    </tr>
+                    <tr>
+                        <td> <input type="range" class="range" id="yearrange" min="1" max="5" step="0.1" onchange="yearrange()"></td>
+                    </tr>
+                    <tr>
+                        <td>1year&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&#8377;5years</td>
+                    </tr>
+                </table>
+                <button onclick="emical()">calculate</button>
+            </div>
+            <h1 id="head"></h1>
+    </div>
+</body>
+<script>
+    function amountrange()
+    {
+        document.getElementById("amount").value=document.getElementById("amountrange").value
+    }
+    function yearrange(){
+        document.getElementById("year").value=document.getElementById("yearrange").value
+    }
+    function interestrange(){
+        document.getElementById("")
+    }
+</script>
+</html>

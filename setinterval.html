@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <input type="text" placeholder="enter color" id="inp1"> 
+    <br>
+    <button onclick="abc1()">click</button>
+</body>
+<script>
+    // setInterval(()=>{
+    //    { document.write("welcome <br>")}
+
+    // },2000);
+    // setTimeout(() =>
+    // {
+    //     {document.write("welcome")}
+    // // },2000);
+    // function abc()
+    // {
+    //     let color=document.getElementById("inp1").value 
+    //     document.querySelector("body").style.backgroundColor=color
+    // }
+    //     function abc1(){
+    //       setInterval(() => {
+    //         { abc() }
+    //     },3000);
+
+    // }
+    function abc(){
+    let a=["blue","red","pink","black","white","orange"]
+    for (let i=0;i<=a.length-1;i++)
+    {
+        let color=document.getElementById("inp1").value
+        console.log(i)
+        document.querySelector("body").style.backgroundColor+=a[i]
+    }
+}
+function abc1()
+{
+    setInterval(() =>
+    {
+        {abc()}
+    },1000);
+}
+</script>
+</html>

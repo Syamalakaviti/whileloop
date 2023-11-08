@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let date=new Date()
+        console.log(date)
+        let day =date.getDay()
+        switch(day)
+        {
+            case 0:console.log("sunday")
+            break;
+            case 1:console.log("Monday")
+            break;
+            case 2:console.log("Tuesday")
+            break;
+            case 3:console.log("wednesday")
+            break;case 4:console.log("thursday")
+            break;
+            case 5:console.log("friday")
+            break;
+            case 6:console.log("saturday")
+            break;
+        }
+        let array=["sunday","monday","tuesday","wednesday","thursday","friday","saturday"]
+        console.log(array[day])
+        let month1=date.getMonth()
+        switch(month1)
+        {
+            case 0:console.log("jan")
+            break;
+            case 1:console.log("feb")
+            break;
+            case 2:console.log("march")
+            break;
+            case 3:console.log("april")
+            break;case 4:console.log("may")
+            break;
+            case 5:console.log("june")
+            break;
+            case 6:console.log("july")
+            break;
+            case 7:console.log("aug")
+            break;
+            case 8:console.log("sep")
+            break;
+            case 9:console.log("oct")
+            break;
+            case 10:console.log("nov")
+            break;
+            case 11:console.log("dec")
+            break;
+        }
+        let a=["jan","feb","march","april","may","june","july","aug","sep","oct","nov","dec"]
+        console.log(a[month1])
+        let date1=date.getDate()
+        console.log(date1)
+        let year=date.getFullYear()
+        console.log(year)
+        let hour=date.getHours()
+        console.log(hour)
+        let min=date.getMinutes()
+        console.log(min)
+        if (hour>12){
+            hour=hour-12
+        }
+        if(hour<10){
+            hur="0"+hour
+        }
+        let h1=(hour>12)?(hour-12):hour
+        let h2=(h1<=10)?("0"+hour):h1
+        console.log(h1)
+        console.log(h2)
+    </script>
+</body>
+</html>

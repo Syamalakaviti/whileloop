@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 800px;
+        }
+        .container{
+            width: 800px;
+            height: 800px;
+            background-color: cyan;
+            border: 3px solid red;
+            border-radius:30px;
+        }
+        .head{
+            background-color: blueviolet;
+        }
+        .head h1{
+            text-align: center;
+            color: aliceblue;
+            padding: 15px;
+            font-style: italic;
+         }
+         .field{
+            position: relative;
+
+         }
+         .field label{
+            display: block;
+            font-size:large;
+            padding: 7px;
+         }
+         .field input{
+            display: block;
+            width: 300px;
+            padding: 10px;
+            border-radius: 5px;
+         }
+
+         .field span{
+            position:absolute ;
+            left: 450px;
+            top: 40px;
+            visibility: hidden;
+        }
+        button{
+            padding: 20px 40px;
+            border-radius: 20px;
+            position: relative;
+            left: 180px;
+            top: 25px;
+        }
+        .field small{
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="head">
+            <h1>REGISTRATION FORM</h1>
+        </div>
+        <form action="">
+            <div class="field">
+                <label for="name">Enter Name</label><input type="text" id="name">
+                <span class="material-symbols-outlined">
+                    check_circle</span>
+                    <span class="material-symbols-outlined">
+                        error </span>
+                        <small>error msg</small>
+                </div>
+                <div class="field">
+                    <label for="phone">Enter Phone</label><input type="text" id="phone">
+                    <span class="material-symbols-outlined">
+                        check_circle</span>
+                        <span class="material-symbols-outlined">
+                            error </span>
+                            <small>error msg</small>
+                    </div>
+                    <div class="field">
+                        <label for="mail">Enter Mail</label><input type="text" id="mail">
+                        <span class="material-symbols-outlined">
+                            check_circle</span>
+                            <span class="material-symbols-outlined">
+                                error </span>
+                                <small>error msg</small>
+                        </div>
+                        <div class="field">
+                            <label for="pass">Enter password</label><input type="password" id="pass">
+                            <span class="material-symbols-outlined">
+                                check_circle</span>
+                                <span class="material-symbols-outlined">
+                                    error </span>
+                                    <small>error msg</small>
+                            </div>
+                            <div class="field">
+                                <label for="confirm">Confirm Password</label><input type="password" id="confirm">
+                                <span class="material-symbols-outlined">
+                                    check_circle</span>
+                                    <span class="material-symbols-outlined">
+                                        error </span>
+                                        <small>error msg</small>
+                                </div>
+                                <button>SUBMIT</button>
+        </form>
+
+    </div>
+</body>
+</html>
